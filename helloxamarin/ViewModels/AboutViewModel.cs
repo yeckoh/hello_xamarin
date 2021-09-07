@@ -7,7 +7,7 @@ namespace helloxamarin.ViewModels
 {
     public class AboutViewModel : BaseViewModel
     {
-        private static readonly Uri _TARGET_URL = new Uri("https://wikipedia.org");
+        private static readonly Uri _TARGET_URL = new Uri("https://durehjournal.com");
         private static readonly BrowserLaunchOptions _BROWSER_OPTIONS = new BrowserLaunchOptions
         {
             LaunchMode = BrowserLaunchMode.External, // .SystemPreferred will launch within the app which may be preferable?

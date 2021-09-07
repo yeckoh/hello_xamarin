@@ -24,6 +24,7 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                 <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
                     <!--<Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />-->
+                    <Label>The button always opens a new tab even if the browser already has the URL open in a different tab</Label>
                 </ContentView>
             </StackLayout>
         </StackLayout>
@@ -36,12 +37,12 @@
                         <FormattedString>
                             <FormattedString.Spans>
                                 <Span Text="OpenWebCommand data binding is located at ViewModels/AboutViewModel.cs and now directs to: "/>
-                                <Span Text="https://wikipedia.org" FontAttributes="Bold"/>
+                                <Span Text="https://durehjournal.com" FontAttributes="Bold"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Button Margin="0,10,0,0" Text="Open wikipedia"
+                <Button Margin="0,10,0,0" Text="open koraen dureh journal"
                         Command="{Binding OpenWebCommand}"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="White" />
