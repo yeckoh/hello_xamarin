@@ -11,14 +11,13 @@ namespace helloxamarin
         private static readonly Uri _TARGET_URL = new Uri("https://durehjournal.com");
         private static readonly BrowserLaunchOptions _BROWSER_OPTIONS = new BrowserLaunchOptions
         {
-            LaunchMode = BrowserLaunchMode.External, // .SystemPreferred will launch within the app which may be preferable?
+            LaunchMode = BrowserLaunchMode.SystemPreferred,
             TitleMode = BrowserTitleMode.Default
         };
 
         public App()
         {
             InitializeComponent();
-
             MainPage = new MainPage();
         }
         protected override void OnStart()
